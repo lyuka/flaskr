@@ -34,7 +34,7 @@ def init_db():
 	db.commit()
 
 
-@app.cli.command('initdb')
+@app.cli.command('initdb')  # 'Flask' object has no attribute 'cli'
 def initdb_command():
 	"""Creates the database tables."""
 	init_db()
